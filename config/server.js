@@ -1,12 +1,12 @@
-const bodyParser = require('body-parser')
-const express = require('express')
+const bodyParser = require('body-parser');
+const express = require('express');
 
-const port = 3003
-const server = express()
+const port = 3003;
+const server = express();
 
-server.use(bodyParser.urlencoded({ extended: true }))
-server.use(bodyParser.json())
+server.use(bodyParser.urlencoded({ extended: true }));
+server.use(bodyParser.json());
 
 server.listen(port, () => {
-  console.log(`BACKEND is running on port ${port}.`)
+  console.log(`BACKEND is running on port ${port}.`);
 });
